@@ -10,10 +10,10 @@ The chip turned out to be a MIFARE Ultralight EV1 with a 7-byte UID:
 04 C2D3F2 3F6B 81
 
 After doing some research on the NXP chip, here’s how the UID breaks down:
-	•	The first byte identifies the manufacturer.
-	•	The next four bytes are part of the unique chip number.
-	•	The following two bytes are a suffix.
-	•	The final byte is a checksum.
+- The first byte identifies the manufacturer.
+- The next four bytes are part of the unique chip number.
+- The following two bytes are a suffix.
+- The final byte is a checksum.
 
 After dumping the tag’s memory using Proxmark3, nothing particularly useful (or understandable) showed up. The tag I tested had some balance on it, so I had the idea to simulate it with the Proxmark3 to see if the purchase deduction was tied to the tag’s UID.
 
